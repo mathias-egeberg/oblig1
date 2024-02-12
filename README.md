@@ -6,6 +6,8 @@ GitHub brukernavn: mathias-egeberg
 
 Github repo URL: https://github.com/mathias-egeberg/oblig1.git
 
+Github pages URL: https://mathias-egeberg.github.io/oblig1/src/main/resources/static/index.html
+
 Fullt navn: Mathias Egeberg
 
 Kort beskrivelse av applikasjon (5-10 setninger):

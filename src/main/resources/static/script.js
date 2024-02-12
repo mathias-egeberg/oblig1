@@ -11,35 +11,35 @@ function kjoper() {
     ];
 
     if (document.getElementById("antall").value === ''){
-        document.getElementById("antall-error").innerText = "Må fylles ut";
+        document.getElementById("antall-error").innerText = "Må fylle ut et antall";
     } else {
         input[1] = document.getElementById("antall").value;
         var godkjent1 = true;
     }
 
     if (document.getElementById("fornavn").value === ''){
-        document.getElementById("fornavn-error").innerText = "Må fylles ut";
+        document.getElementById("fornavn-error").innerText = "Må fylle ut fornavn";
     }else {
         input[2] = document.getElementById("fornavn").value;
         var godkjent2 = true;
     }
 
     if (document.getElementById("etternavn").value === ''){
-        document.getElementById("etternavn-error").innerText = "Må fylles ut";
+        document.getElementById("etternavn-error").innerText = "Må fylle ut etternavn";
     }else {
         input[3] = document.getElementById("etternavn").value;
         var godkjent3 = true;
     }
 
     if (document.getElementById("telefon").value === ''){
-        document.getElementById("telefon-error").innerText = "Må fylles ut";
+        document.getElementById("telefon-error").innerText = "Må fylle ut et telefonnummer";
     }else {
         input[4] = document.getElementById("telefon").value;
         var godkjent4 = true;
     }
 
     if (document.getElementById("email").value === ''){
-        document.getElementById("email-error").innerText = "Må fylles ut";
+        document.getElementById("email-error").innerText = "Må fylle ut email";
     }else {
         input[5] = document.getElementById("email").value;
         var godkjent5 = true;
