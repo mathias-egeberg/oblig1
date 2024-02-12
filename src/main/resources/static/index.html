@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kinobilletter</title>
+    <script src="script.js"></script>
+    <style>
+
+        body{
+            margin-left: 30px;
+        }
+
+        .dropdown-div{
+            margin-bottom: 30px;
+        }
+
+        .inputs{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .input-line{
+            display: flex;
+            align-items: baseline;
+        }
+
+        .input-line label{
+            width: 80px;
+            margin-right: 5px;
+        }
+
+        .input-line input{
+            width: 150px;
+        }
+
+        .input-line p{
+            color: red;
+        }
+
+        .inputs button{
+            width: 80px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<h1>Bestilling av kinobilletter</h1>
+
+<div class="dropdown-div">
+    <label for="dropdown">Velg film: </label>
+    <select id="dropdown" >
+        <option value="" disabled selected>Velg film her</option>
+        <option value="Harry Potter">Harry Potter</option>
+        <option value="Iron Man">Iron Man</option>
+        <option value="Bad Boys II">Bad Boys II</option>
+        <option value="Titanic">Titanic</option>
+    </select>
+</div>
+
+<div class="inputs">
+    <div class="input-line">
+        <label for="antall">Antall: </label>
+        <input id="antall" placeholder="0" style="width: 15px;">
+        <p id="antall-error"></p>
+    </div>
+
+    <div class="input-line">
+        <label for="fornavn">Fornavn : </label>
+        <input id="fornavn" type="text">
+        <p id="fornavn-error"></p>
+    </div>
+
+    <div class="input-line">
+        <label for="etternavn">Etternavn : </label>
+        <input id="etternavn" type="text">
+        <p id="etternavn-error"></p>
+    </div>
+
+    <div class="input-line">
+        <label for="telefon">Telefon : </label>
+        <input id="telefon" type="tel">
+        <p id="telefon-error"></p>
+    </div>
+
+    <div class="input-line">
+        <label for="email">Email : </label>
+        <input id="email" type="email">
+        <p id="email-error"></p>
+    </div>
+
+    <button onclick="kjoper(); clearInput()">Kjøp billett</button>
+
+</div>
+
+<h3 id="alle-biletter">Alle billetter</h3>
+
+<div id="output"></div>
+
+<button onclick="deleteArray()">Slett alle billetter</button>
+
+
+</body>
+</html>
