@@ -78,7 +78,7 @@ function updateArray(){
 
 //Her er funskjonen for å slette alt innhold i arrayet
 
-function deleteArray(){
+function deleteArray(){ 
     kjop.splice(0, kjop.length);
     updateArray()
 }
